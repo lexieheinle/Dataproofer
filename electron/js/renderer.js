@@ -136,7 +136,7 @@ HTMLRenderer.prototype.done = function() {
   var rowsTestedPct = d3.format(".0%")(sampleProgress);
   var resultList = this.resultList;
   var handsOnTable = this.handsOnTable;
-  var colorScale = d3.scaleThreshold()
+  var colorScale = d3.scale.threshold()
     .domain(_.range(0,1.1,0.1))
     .range([
       '#342c51',
